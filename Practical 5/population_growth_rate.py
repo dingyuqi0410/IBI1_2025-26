@@ -9,7 +9,7 @@ for country in population_2020:
     change[country]=percentage_change     #将变化存进字典change
 #step 2
 print("The population changes in descending order:")
-for number in sorted(change.values(),reverse=True):
+for number in sorted(change.values(),reverse=True):     #用sorted来按照特定顺序遍历所有的值，也就是number
     print(number)
 print(f"The largest increase: {max(change,key=change.get)}")
 print(f"The largest decrease: {min(change,key=change.get)}")
@@ -19,5 +19,6 @@ changes=list(change.values())
 plt.bar(countries,changes,width=0.35)
 plt.ylabel('Percentage changes of population')
 plt.xlabel('Countries')
-plt.title('Population Growth Rate')
+plt.title('Population Growth Rate (2020-2024)')
+plt.axhline(y=0, color="black", linewidth=1)    #print以后发现没有明显的y=0时的x轴，所以加一条
 plt.show()
