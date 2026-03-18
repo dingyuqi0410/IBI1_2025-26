@@ -9,8 +9,8 @@ for country in population_2020:
     change[country]=percentage_change     #将变化存进字典change
 #step 2
 print("The population changes in descending order:")
-for number in sorted(change.values(),reverse=True):     #用sorted来按照特定顺序遍历所有的值，也就是number
-    print(number)
+descending_number=list(change.values())
+print(sorted(descending_number,reverse=True))    #用sorted来按数字大小排序，reverse=True表示相反
 print(f"The largest increase: {max(change,key=change.get)}")
 print(f"The largest decrease: {min(change,key=change.get)}")
 #step 3
