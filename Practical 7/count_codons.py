@@ -62,7 +62,7 @@ in_file.close()
 print(f'Selected stop codon: {selected_stop}')
 print("Counts of upstream in-frame codons:")
 for codon in codon_counts:     #分别遍历每一个密码子
-    print(f"{codon}: {codon_counts[codon]}")       #分别打印每一个密码子的counts
+    print(f"{codon}: {codon_counts[codon]}")       #分别打印每一个密码子对应的counts
 #下面开始画图
 labels=[]     #建立一个空列表储存pie的label，也就是codon的名字
 sizes=[]    #建立一个空列表储存pie每一块的大小，也就是counts
