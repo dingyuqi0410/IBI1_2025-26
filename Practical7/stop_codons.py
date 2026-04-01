@@ -11,7 +11,7 @@ for line in in_file:
             found_stops=[]     #创建一个空列表，用来储存找到的file中的stop codon类型
             for i in range(len(sequence)-2):
                 part=sequence[i:]
-                codons=re.findall(r'[ATGC]{3}',part)
+                codons=re.findall(r'[ATGC]{3}',part)   
                 if codons and codons[0]=='ATG':
                     for codon in codons[1:]:       #跳过ATG从第二个往后数
                         if codon in stop_codons:
@@ -26,7 +26,7 @@ for line in in_file:
                     stop_text=stop_text+' '+found_stops[1]     #拼接字符串，把第二个拼到第一个后面，中间加一个空格
                     if len(found_stops)>2:
                         stop_text=stop_text+' '+found_stops[2]     #总共也就三种，这样写够了
-                out_file.write('>'+name+' '+stop_text+'\n')       #格式类似于：YBR024W TGA TAA TAG
+                out_file.write('>'+name+'_mRNA;'+stop_text+'\n')       #格式类似于：YBR024W_mRNA;TGA TAA TAG
                 out_file.write(sequence+'\n')
         header=line     #把当前这一行新的标题存起来，因为接下来的程序要开始读取这个基因。比如说一开始header是空的，那么就会执行这一行把line加进去，这一行不能放到前面去
         sequence=''      #把sequence清空，因为新的sequence还没有开始讲
