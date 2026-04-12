@@ -26,4 +26,5 @@ else:
 total=0
 for expression_value in expression_values:
     total+=expression_value
-print(total)
+mean_expression=total/len(expression_values)
+print(mean_expression)

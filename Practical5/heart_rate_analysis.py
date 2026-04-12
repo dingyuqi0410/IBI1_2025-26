@@ -21,8 +21,9 @@ print(f"High: {high_count}")
 categories={"Low": low_count,"Normal": normal_count, "High": high_count}                   
 print(f"The largest category is: {max(categories,key=categories.get)}")     #重要：max(categories,key=categories.get)的意思是：在categorie这个字典里，找出对应值最大的那个键；max会默认比较key，所以令key=categories.get，相当于key是一个比较规则和标准；categories.get是一个查字典里对应值的工具
 #step 3
-labels=f"High: {high_count} patients",f"Normal: {normal_count} patients",f"Low: {low_count} patients"     #直接把人数写在label里面
+labels=f"Low: {low_count} patients",f"Normal: {normal_count} patients",f"High: {high_count} patients"     #直接把人数写在label里面
 sizes=list(categories.values())
 plt.pie(sizes,labels=labels,autopct='%1.1f%%',shadow=False,startangle=90)
+plt.title("Distribution of Heart Rate Categories")
 plt.axis('equal')
 plt.show()
