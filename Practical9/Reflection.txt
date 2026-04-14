@@ -1,0 +1,5 @@
+I think practical 9 is hard because it tests our ability to organize and deal with many variables, arrays, and lists.
+Besides, it also requires our ability to draw the figure and plot.
+I enjoyed generating the figure, and I love seeing the figures turn out exactly the way I want them to.
+The most important thing I learned was to carefully check the variables you change and use. 
+In the File spatial_SIR.py task, when I changed the susceptible neighbor to the infected neighbor, I mistakenly changed the original infected persons instead of their neighbors, which took me a lot of time to discover and correct this mistake.
