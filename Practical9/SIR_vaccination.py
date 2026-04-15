@@ -34,7 +34,5 @@ plt.xlabel("time")
 plt.ylabel("number of people")
 plt.title("SIR model with different vaccination rates")
 plt.legend()
-plt.savefig("SIR_vaccination_plot.png")
+plt.savefig("SIR_vaccination_plot.png",format='png')
 plt.show()
-
-#"/Users/a18274964300/Documents/大一下/IBI1/IBI1_2025-26/IBI1_2025-26/Practical9/SIR_vaccination_plot",format="pn“

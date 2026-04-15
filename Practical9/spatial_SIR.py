@@ -1,8 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-population=np.zeros((100,100))
-outbreak=np.random.choice(range(100),2)      #生成 0~99这100个数字，随机选两个数字
+population=np.zeros((100,100))        #创建一个100行×100列的网格（二维数组），所有格子一开始都是0
+outbreak=np.random.choice(range(100),2)      #生成 0~99这100个数字，随机选两个数字，会产生一个数组，如[15,42]表示第15行，第42列
 population[outbreak[0],outbreak[1]]=1      #把第outbreak[0]行，第outbreak[1]列位置的数值改成1（相当于给了一个坐标）
 
 beta=0.3
