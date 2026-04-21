@@ -1,0 +1,13 @@
+Question:
+Plot a boxplot of DALYs for China and report the range between the maximum and minimum values.
+
+Line number in dalys.py:
+line 47
+
+Discussion:
+The result shows as what I expected
+The boxplot shows that DALYs for China were spread over a fairly wide range, suggesting substantial variation across the years in the dataset. 
+The range between the maximum and minimum values further suggests that China’s DALYs changed considerably during the recorded period.
+The median is around 30,000, and the interquartile range is also quite large, which indicates that the middle 50% of the values were not tightly clustered. 
+There are no obvious outliers shown in the plot, so the data do not appear to contain any extremely unusual values. 
+This result is reasonable because the burden of disease in a country can vary over time due to changes in population structure, public health conditions, healthcare, and disease patterns. 
