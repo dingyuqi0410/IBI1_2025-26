@@ -70,9 +70,9 @@ for codon in codon_counts:
     labels.append(codon)    #把每一个codon都加入labels中
     sizes.append(codon_counts[codon])      #把每一个对应计数都加入sizes中
 plt.figure(figsize=(12,12))
-plt.pie(sizes,labels=labels,autopct='%1.1f%%',shadow=False,startangle=90)     #autopct='%1.1f%%'表示会显示百分比
+plt.pie(sizes,labels=labels,autopct='%1.1f%%',shadow=False,startangle=90,labeldistance=1.08,pctdistance=0.80,textprops={'fontsize': 7})     #autopct='%1.1f%%'表示会显示百分比,labeldistance=1.08表示label离圆心的距离（远一点，不会重叠），pctdistance=0.72表示百分比离圆心的距离(远一点，不会重叠），textprops={'fontsize': 7}表示设置文本的字体大小
 plt.title('Codon distribution upstream of '+selected_stop)
-file_name="codon_pie_"+selected_stop+'.png'
+file_name='codon_pie.png'
 plt.savefig(file_name)      #这一部非常重要，明确说了要把图保存到文件里面，不能只是show
 plt.close()     #关闭图像，防止重复画图的时候出问题
 print('Pie chart saved as', file_name)     #相当于提示你结束了
