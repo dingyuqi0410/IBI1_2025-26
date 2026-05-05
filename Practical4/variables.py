@@ -10,8 +10,19 @@ elif d<e:
 else:
     print("population growth is not change in Scotland")
 #d>e, population growth is decelerating in Scotland
+print("\n")
 X=True
 Y=False
 W=X or Y
-print(W)
-# the truth table for W: W = True
+print("X\tY\tW")
+booleans = [True, False]
+for X in booleans:
+    for Y in booleans:
+        W = X or Y
+        print( X,"\t",Y,"\t",W)
+# Truth table for X,Y,Z:
+#X       Y       W
+#True     True    True
+#True     False   True
+#False    True    True
+#False    False   False
