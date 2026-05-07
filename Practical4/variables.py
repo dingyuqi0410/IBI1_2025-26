@@ -21,8 +21,9 @@ for X in booleans:
         W = X or Y
         print( X,"\t",Y,"\t",W)
 # Truth table for X,Y,Z:
-#X       Y       W
-#True     True    True
-#True     False   True
-#False    True    True
-#False    False   False
+# | X     | Y     | W     |
+# |-------|-------|-------|
+# | True  | True  | True  |
+# | True  | False | True  |
+# | False | True  | True  |
+# | False | False | False |
