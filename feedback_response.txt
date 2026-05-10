@@ -27,4 +27,3 @@ Edited script: heart_rates.py
 Changes made: The labels on my pie chart are mixed up, the high category label is next to the low category section and vice versa.
               So I corrected the labels on the pie chart to make them correspond one-to-one in order, so that the low, normal, and high heart rate categories match the correct sections.
               And I also added a clear title to the pie chart to make the pie chart well-labelled.
-
