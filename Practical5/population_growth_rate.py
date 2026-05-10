@@ -2,15 +2,15 @@ import matplotlib.pyplot as plt
 #step 1
 population_2020={"UK": 66.7,"China": 1426,"Italy": 59.4,"Brazil": 208.6,"USA": 331.6}
 population_2024={"UK": 69.2,"China": 1410,"Italy": 58.9,"Brazil": 212.0,"USA": 340.1}
-change={}      #创建一个空字典，用来存放变化
+change={}      
 for country in population_2020:
     percentage_change=((population_2024[country] - population_2020[country]) / population_2020[country]) * 100
     print(f"percentage change of {country}: {percentage_change}")
-    change[country]=percentage_change     #将变化存进字典change
+    change[country]=percentage_change     
 #step 2
 print("The population changes in descending order:")
 descending_number=list(change.values())
-print(sorted(descending_number,reverse=True))    #用sorted来按数字大小排序，reverse=True表示相反
+print(sorted(descending_number,reverse=True))    
 print(f"The largest increase: {max(change,key=change.get)}")
 print(f"The largest decrease: {min(change,key=change.get)}")
 #step 3
@@ -20,5 +20,5 @@ plt.bar(countries,changes,width=0.35)
 plt.ylabel('Percentage changes of population')
 plt.xlabel('Countries')
 plt.title('Population Growth Rate (2020-2024)')
-plt.axhline(y=0, color="black", linewidth=1)    #print以后发现没有明显的y=0时的x轴，所以加一条
+plt.axhline(y=0, color="black", linewidth=1)    
 plt.show()
