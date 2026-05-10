@@ -2,7 +2,7 @@ Question:
 Plot a boxplot of DALYs for China and report the range between the maximum and minimum values.
 
 Line number in dalys.py:
-line 54
+line 52
 
 Discussion:
 The result shows as what I expected
