@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-S=9999      # "S" for suscepptible
+S=9999      # "S" for susceptible
 I=1         # "I" for infected
 R=0         # "R" for recovered
 N=10000
@@ -20,12 +20,12 @@ R_values=[R]
 #     save the new values in the lists
 for t in range(1000):
     infection_probability=beta*I/N
-    new_infections=np.random.choice([0,1],size=S,p=[1-infection_probability,infection_probability]).sum()      #对每一个易感者随机决定“感染(1)”还是“不感染(0)”，把所有1加起来，就是新增的感染的人数
+    new_infections=np.random.choice([0,1],size=S,p=[1-infection_probability,infection_probability]).sum()      
     new_recoveries=np.random.choice([0,1],size=I,p=[1-gamma,gamma]).sum()
     S-=new_infections
     I=I+new_infections-new_recoveries
     R+=new_recoveries
-    S_values.append(S)       #将更新的分别存入列表
+    S_values.append(S)      
     I_values.append(I)
     R_values.append(R)
 
@@ -33,9 +33,9 @@ plt.figure(figsize=(6,4),dpi=150)
 plt.plot(S_values,label="susceptible")
 plt.plot(I_values,label="infected")
 plt.plot(R_values,label="recovered")
-plt.xlabel("time")
-plt.ylabel("number of people")
-plt.title("SIR model")
+plt.xlabel("Time")
+plt.ylabel("Number of people")
+plt.title("SIR Model")
 plt.legend()
 plt.savefig("SIR_model_plot.png",format='png')
 plt.show()
