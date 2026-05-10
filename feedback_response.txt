@@ -1,0 +1,30 @@
+Response to Fomative Feedback
+
+I have read the formative feedback and made chages to my work based on the comments:
+
+
+Week 3:
+Edited: the name of my repository
+Changes made: I named my repository incorrectly at the beginning. I didn’t follow the required format <username>.github.io and didn’t use my GitHub username for the repo name, 
+              so the feedback said my github website couldn't be found. 
+              After receiving the feedback, I change the repo name in the format of <username>.github.io
+
+
+Week 4:
+Edited script: variables.py
+Changes made: I added a full truth table for X, Y, and W in the comments, instead of only including a single case.
+
+Edited script: infection.py
+Changes made: I added an if statement to ensure that when current_infected bigger than total, I let current_infected equals to total. 
+              This way, the number of infections will never exceed the total population.
+
+
+Week 5:
+Edited script: gene_expression.py
+Changes made: I corrected the average gene expression calculation instead of print the sum of the expression values.
+
+Edited script: heart_rates.py
+Changes made: The labels on my pie chart are mixed up, the high category label is next to the low category section and vice versa.
+              So I corrected the labels on the pie chart to make them correspond one-to-one in order, so that the low, normal, and high heart rate categories match the correct sections.
+              And I also added a clear title to the pie chart to make the pie chart well-labelled.
+
