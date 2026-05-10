@@ -1,5 +1,5 @@
-def predicting_protein_mass(sequence):     #定义函数predicting_protein_mass，参数sequence表示输入的氨基酸序列
-    residue_mass={      #用一个字典保存氨基酸字母编号和对应的质量
+def predicting_protein_mass(sequence):     
+    residue_mass={      
         "G":57.02,
         "A":71.04,
         "S": 87.03,  
@@ -21,14 +21,18 @@ def predicting_protein_mass(sequence):     #定义函数predicting_protein_mass�
         "Y": 163.06, 
         "W": 186.08 
     }
-    total_mass=0       #从0开始累加总质量
+    total_mass=0       
     sequence=sequence.upper()       
     for amino_acid in sequence:
         if amino_acid not in residue_mass:
-            return "Error: amino acid "+ amino_acid+" has no recorded mass"     #如果找不到，立刻返回错误信息，不再往下继续
+            return "Error: amino acid "+ amino_acid+" has no recorded mass"     
         total_mass=total_mass+residue_mass[amino_acid]
     return total_mass
-example_sequence="GJS"
+example_sequence="GAS"
 example_mass=predicting_protein_mass(example_sequence)
 print(f"Sequence: {example_sequence}")
-print(f"Protein mass: {example_mass} amu")
+#print results
+if type(example_mass) == str:      #if the result is a string, it means there was an error, so we print the error message
+    print(example_mass)       
+else:          #if the result is not a string, it means we got a valid mass, so we print the mass and the units
+    print(f"Protein mass: {example_mass} amu")
