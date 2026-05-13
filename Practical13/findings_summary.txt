@@ -1,0 +1,16 @@
+The length of the human DLX5 protein: 289 amino acids
+The subcellular	localisation of the	human DLX5 protein: Nucleus
+
+Number of hits: 250
+Range of percentage identity: 83.2% to 100%
+Mouse DLX5 UniProt ID P70396 percentage identity: 96.5%
+Blue / coloured residues: usually indicate identical or strongly conserved aligned residues.
+Grey residues: usually indicate non-identical, weakly conserved, or less informative aligned residues.
+
+Python alignment results:
+Comparison          Total BLOSUM62 score     Percentage identity    
+Human-Mouse         1490                     96.54%                
+Human-Random        -238                     5.19%                 
+Mouse-Random        -240                     5.19%                 
+
+The human and mouse DLX5 sequences were the most closely related pair. 
